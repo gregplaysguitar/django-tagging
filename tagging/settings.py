@@ -11,3 +11,8 @@ MAX_TAG_LENGTH = getattr(settings, 'MAX_TAG_LENGTH', 50)
 # Whether to force all tags to lowercase before they are saved to the
 # database.
 FORCE_LOWERCASE_TAGS = getattr(settings, 'FORCE_LOWERCASE_TAGS', False)
+
+
+# Tag delimiter - if set, will use this char to delimit. If None,
+# will use the default space/comma weirdness. 
+TAG_DELIMITER = getattr(settings, 'TAG_DELIMITER', None)
